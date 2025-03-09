@@ -74,7 +74,7 @@ const ProductFormPage: React.FC = () => {
           });
           
           setImagePreview(data.images.map(img => {
-            return `${process.env.VITE_UPLOADS_URL}/${img.filename}`
+            return `${import.meta.env.VITE_UPLOADS_URL}/${img.filename}`
           } ));
         } catch (error) {
           console.error("Failed to fetch product:", error);
