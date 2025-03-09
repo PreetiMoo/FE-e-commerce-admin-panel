@@ -4,7 +4,10 @@ export interface Product {
     name: string;
     price: number;
     description?: string;
-    images: string[];
+    images: [{
+        id: string;
+        filename: string;
+    }];
     createdAt: string;
     updatedAt: string;
   }
@@ -15,5 +18,8 @@ export interface Product {
     price: number;
     description?: string;
     images?: FileList;
-    existingImages?: string[];
+    existingImages?: [{
+        id: string;
+        filename: string;
+    }];
   }

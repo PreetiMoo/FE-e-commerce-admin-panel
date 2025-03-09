@@ -33,7 +33,6 @@ const ProductFormPage: React.FC = () => {
       name: "",
       price: 0,
       description: "",
-      existingImages: [],
     },
     validationSchema,
     onSubmit: async (values) => {

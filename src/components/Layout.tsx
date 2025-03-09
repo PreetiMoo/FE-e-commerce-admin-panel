@@ -22,12 +22,13 @@ const Layout: React.FC<LayoutProps> = ({ children }) => {
                 >
                   Dashboard
                 </Link>
-                <Link
+                <br></br>
+                {/* <Link
                   to="/products"
                   className="border-indigo-500 text-gray-900 inline-flex items-center px-1 pt-1 border-b-2 text-sm font-medium"
                 >
                   Products
-                </Link>
+                </Link> */}
               </div>
             </div>
           </div>
