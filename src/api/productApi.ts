@@ -1,11 +1,9 @@
 import axios from "axios";
 import { Product, ProductFormData } from "../interfaces/Product";
 
-const API_URL = "http://localhost:5000/api";
-
 const axiosInstance = axios.create({
-  baseURL: API_URL,
-});
+    baseURL: import.meta.env.VITE_API_URL,
+  });
 
 export const productApi = {
   getAllProducts: async (): Promise<Product[]> => {
