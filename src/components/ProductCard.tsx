@@ -20,7 +20,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, onDelete }) => {
       <div className="product-card-image-container h-48 w-full overflow-hidden">
         {product.images && product.images.length > 0 ? (
           <img
-            src={`http://localhost:5000/uploads/${product.images[0].filename}`}
+            src={`${process.env.VITE_UPLOADS_URL}/${product.images[0].filename}`}
             alt={product.name}
             className="product-card-image w-full h-full object-cover"
           />

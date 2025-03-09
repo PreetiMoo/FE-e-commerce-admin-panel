@@ -74,7 +74,7 @@ const ProductFormPage: React.FC = () => {
           });
           
           setImagePreview(data.images.map(img => {
-            return `http://localhost:5000/uploads/${img.filename}`
+            return `${process.env.VITE_UPLOADS_URL}/${img.filename}`
           } ));
         } catch (error) {
           console.error("Failed to fetch product:", error);
